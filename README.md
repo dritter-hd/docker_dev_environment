@@ -1,4 +1,4 @@
-# docker_dev_environment
+# A docker development environment
 
 Development environment as docker container. Use in projects by copying `Dockerfile` and `run` to the respective directory (or add to path, for convenience). That means, the command is passed to docker: the command runs in the current directory but within the image. Docker does not copy your code to the image: everything is read and stored in the current directory.
 
@@ -20,3 +20,7 @@ Then run any command, e.g.,
 ```
 
 To cleanup use `docker system prune`.
+
+**Stats**
+
+List docker containers `docker container ls -a` and show stats `docker stats`.
